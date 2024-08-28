@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #0066cc;
+}
+
+/* Profile Section Styles */
+.profile-container {
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #0066cc;
+    transition: border-color 0.3s ease;
+}
+
+.profile-container img:hover {
+    border-color: #004d99;
+}
+
+.profile-container b {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link Styles */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d99;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .profile-container img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-container b {
+        font-size: 0.9em;
+    }
+
+    table td {
+        font-size: 0.8em;
+    }
+}
